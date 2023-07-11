@@ -1,1 +1,2 @@
-print("Hello World")
+import deepchem as dc
+dc.__version__
