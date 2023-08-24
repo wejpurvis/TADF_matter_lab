@@ -39,11 +39,16 @@ def run_model(morgan_fp, model):
 
 def show_predict_page():
     
-    st.markdown("<h1 style='text-align: center; color: black;'>S1 and T1 Energy Predictions for TADF Molecules</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center'>S1 and T1 Energy Predictions for TADF Molecules</h1>", unsafe_allow_html=True)
 
     st.write("""This project aims to predict the S1 and T1 energies of TADF molecules for 
              OLEDs at the B3LYP level of theory. The predictions are made using a multi
-             layer perceptron (MLP) neueral network trained on 34k molecules.""")
+             layer perceptron (MLP) neueral network trained on 34k molecules.
+             """)
+    st.write("Test the model out by inputing the SMILES of a desire molecule below!")
+    st.write("""\n
+             (e.g. COC1=CC=CC(=C1)CNC(=O)CSC2=NC3=CC=CC=C3N2C4=CC=CC=C4)
+             """)
     
     smiles_placeholder = st.empty()
     smiles_input = st.text_input("Enter a SMILES 👇")
