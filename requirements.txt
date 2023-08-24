@@ -68,7 +68,6 @@ pyre-extensions==0.0.30
 python-dateutil==2.8.2
 pytz==2023.3
 pytz-deprecation-shim==0.1.0.post0
-pywin32==306
 pyzmq==25.1.0
 rdkit==2023.3.2
 referencing==0.30.2
