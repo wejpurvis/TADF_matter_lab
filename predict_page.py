@@ -39,12 +39,12 @@ def run_model(morgan_fp, model):
 
 def show_predict_page():
     
-    st.markdown("<h1 style='text-align: center'>S1 and T1 Energy Predictions for TADF Molecules</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center'>S<sub>1</sub> and T<sub>1</sub> Energy Predictions for TADF Molecules</h1>", unsafe_allow_html=True)
 
-    st.write("""This project aims to predict the S1 and T1 energies of TADF molecules for 
+    st.write("""This project was conducted by Will Purvis as part of his summer visit to the Matter Lab (UofT). It aims to predict the S<sub>1</sub> and T<sub>1</sub> energies of TADF molecules for 
              OLEDs at the B3LYP level of theory. The predictions are made using a multi
-             layer perceptron (MLP) neueral network trained on 34k molecules.
-             """)
+             layer perceptron (MLP) neural network. Click on model details to read more about the project.
+             """, unsafe_allow_html=True)
     st.write("Test the model out by inputing the SMILES of a desire molecule below!")
     st.write("""\n
              (e.g. COC1=CC=CC(=C1)CNC(=O)CSC2=NC3=CC=CC=C3N2C4=CC=CC=C4)
@@ -62,7 +62,7 @@ def show_predict_page():
                 img = Draw.MolToImage(mol)
                 st.image(img, width=300, output_format ="PNG")
             else:
-                st.warning("Invalid SMILES input")
+                st.error("Invalid SMILES input")
         except Exception as e:
             st.error(f"An error occurred: {e}")
        
