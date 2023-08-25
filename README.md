@@ -1,2 +1,2 @@
-# TADF_matter_lab
-Repository for high throughput screening of TADF candidates at the Matter Lab
+# ML-Driven TADF Property Prediction
+This repository contains the code for the two projects I carried out over the summer of 2023 whilst visiting the Aspuru-Guzik group at the University of Toronto. All of the models were first written in jupyter notebooks for easier debugging and accessibility. The MLP model for the quantum project was also embedded in a streamlit webapp.
